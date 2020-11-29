@@ -29,7 +29,7 @@ function _trim(target: string) {
  * eg. classnames(['a', { b: true, c: false }]) ==> 'a b'
  * @param v
  */
-function classnames(v: string | (string | IObject)[] | IObject) {
+function classNames(v: string | (string | IObject)[] | IObject) {
   const type = _getType(v);
   const includes = ['string', 'object', 'array'];
   // 如果传入的数据类型不是可选类型则直接返回空字符串
@@ -57,11 +57,11 @@ function classnames(v: string | (string | IObject)[] | IObject) {
     let r = '';
     const arr = v as any[];
     arr.forEach((item) => {
-      r += classnames(item) + ' ';
+      r += classNames(item) + ' ';
     });
     return _trim(r);
   }
   return '';
 }
 
-export default classnames;
+export default classNames;
