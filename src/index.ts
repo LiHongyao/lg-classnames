@@ -44,7 +44,7 @@ function classNames(v: string | (string | IObject)[] | IObject) {
   if (type === 'object') {
     let r = '';
     const o = v as IObject;
-    Object.keys(o).forEach(key => {
+    Object.keys(o).forEach((key) => {
       const value = o[key];
       if (value) {
         r += key + ' ';
