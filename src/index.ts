@@ -2,7 +2,7 @@
  * 对象类型/限制值只能是布尔类型
  */
 interface IObject {
-  [key: string]: boolean;
+  [key: string]: boolean | undefined;
 }
 
 /**
