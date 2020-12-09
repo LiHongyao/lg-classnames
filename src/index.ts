@@ -21,9 +21,9 @@ function _trim(target: string) {
 }
 
 /**
- * class 转换，只接受字符串类型、数组类型及对象类型
- * 数组类型里面之能是字符串类型和对象类型
- * 注意：这里的对象类型的值只能是布尔类型
+ * class 转换，只接受字符串类型、数组类型、对象类型或undefined
+ * 数组类型里面只能是字符串类型和对象类型
+ * 注意：这里的对象类型的值只能是布尔类型或undefined
  * eg. classnames('a') ==> 'a'
  * eg. classnames({a: true, b: false}) ==> 'a'
  * eg. classnames(['a', { b: true, c: false }]) ==> 'a b'
